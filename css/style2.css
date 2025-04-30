@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background:  white;
+    background-image: url("chantier.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: 
+  2px 2px 4px rgba(11, 43, 149, 0.5),  /* Ombre noire pour le contour */
+  -2px -2px 4px rgba(0, 60, 188, 0.5),
+  2px -2px 4px rgba(31, 21, 172, 0.5),
+  -2px 2px 4px rgba(0, 0, 0, 0.5);
+
+     
+  }
+  
+  /* En-tête de la page web */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-color: transparent
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    color:  #249EC3;
+    text-shadow: 
+    2px 2px 4px rgba(0, 36, 237, 0.5),  /* Ombre noire pour le contour */
+    -2px -2px 4px rgba(0, 0, 0, 0.5),
+    2px -2px 4px rgba(0, 0, 0, 0.5),
+    -2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+  }
+  
+  
+  .header h2 {
+    color:  #181F4B;
+    text-shadow: white;
+    text-shadow: 
+    2px 2px 4px rgba(57, 216, 244, 0.5),  /* Ombre noire pour le contour */
+    -2px -2px 4px rgba(0, 0, 0, 0.5),
+    2px -2px 4px rgba(0, 0, 0, 0.5),
+    -2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style de la barre de navigation principale */
+  .topnav {
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  /* Style des liens de la barre de navigation principale */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Changement de couleur quand on passe au-dessus */
+  .topnav a:hover {
+    background-color: transparent;
+    color: rgb(22, 83, 174);
+  }
+  
+  /* Création de 3 colonnes inégales flottant côte à côte */
+  /* Colonne gauche */
+  .leftcolumn {   
+    float: left;
+    width: 50%;
+  }
+  
+  /* Colonne droite */
+  .rightcolumn {
+    float: right;
+    width: 25%;
+    background-color: transparent;
+    padding-left: 20px;
+  }
+  
+  /* Image */
+  .image {
+    background-color: transparent;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Ajoute des cartes pour encadrer les sujets */
+  .card {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+    color: white;
+  }
+  
+  /* Arrange les colonnes flottantes */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Pied de page */
+  .footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background: transparent;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
